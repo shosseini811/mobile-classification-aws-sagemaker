@@ -5,7 +5,7 @@ import boto3
 from sklearn.model_selection import train_test_split
 
 s3 = boto3.client('s3')
-bucket_name = 'image-class-tf-torch'
+bucket_name = 'sourceofimages'
 
 # Delete all objects in the bucket
 s3_bucket = boto3.resource('s3').Bucket(bucket_name)
